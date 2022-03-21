@@ -51,13 +51,18 @@ for(let key in wayneBarnett)
 //Una volta definita la struttura dati, prendendo come riferimento la card di esempio presente nell'html, stampare dinamicamente una card per ogni membro del team.
 
 //const card = document.createElement('div');
-const card = [];    //creo un array per salvarmi i riferimenti ai vari div che conterranno l'immagine,il nome ed la professione di ciascun membro del team
+const teamCard = [];
+const cardImage = [];    //creo un array per salvarmi i riferimenti ai vari div che conterranno l'immagine,il nome ed la professione di ciascun membro del team
+const cardText = [];
 const nome = [];    //array per salvarmi i riferimenti ai vari h3 dei nomi
 const ruolo = [];   //array per salvarmi i riferimenti ai vari p in cui ci sarà scritta la professione
 const img = [];     //array per salvarmi i riferimenti alle varie immagini 
+
 for(let i = 0; i < team.length;i++)
 {
-    card.push(document.createElement('div'));
+    teamCard.push(document.createElement('div'));
+    cardImage.push(document.createElement('div'));   //inserisco i riferimenti  nell'array dei riferimenti ai vari div contenenti le informazioni dei membri dei team
+    cardText.push(document.createElement('div'));
     nome.push(document.createElement('h3'));
     ruolo.push(document.createElement('p'));
     img.push(document.createElement('img'));
@@ -65,7 +70,12 @@ for(let i = 0; i < team.length;i++)
 
 for(let i = 0; i < team.length;i++)
 {
-    document.querySelector('.team-container').appendChild(card[i]);
+    document.querySelector('.team-container').appendChild(teamCard[i]);
+    teamCard[i].classList.add('team-card');
+    teamCard[i].appendChild(cardImage[i]);
+    cardImage[i].classList.add('card-image');
+    teamCard[i].appendChild(cardText[i]);
+    cardText[i].classList.add('card-text');
 
 }
 
@@ -78,9 +88,9 @@ for(let i = 0; i < team.length;i++)
 
 for(let i = 0; i < team.length; i++)
 {
-    card[i].appendChild(img[i]);
-    card[i].appendChild(nome[i]);
-    card[i].appendChild(ruolo[i]);
+    cardImage[i].appendChild(img[i]);
+    cardText[i].appendChild(nome[i]);
+    cardText[i].appendChild(ruolo[i]);
 
 }
 
