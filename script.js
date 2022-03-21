@@ -117,5 +117,6 @@ function creaRiferimenti(lunghezzaArrayTeam)
 
 }
 
+function aggiuntaRiferimentiAllHtml()
 
 
