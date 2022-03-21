@@ -73,7 +73,7 @@ for(let i = 0; i < team.length;i++)
 {
     nome[i].innerText = team[i].nome;
     ruolo[i].innerText = team[i].ruolo;
-    img[i].setAttribute('src',wayneBarnett.img);
+    img[i].setAttribute('src',team[i].img);
 }
 
 for(let i = 0; i < team.length; i++)
