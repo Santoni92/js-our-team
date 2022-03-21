@@ -4,7 +4,7 @@ console.log('JS OK!');
 const wayneBarnett = {
     nome: "Wayne",
     ruolo: "founder",
-    img: "C:/Users/Utente/Desktop/BooleanProject/js-our-team/img/wayne-barnett-founder-ceo.jpg"
+    img: "img/wayne-barnett-founder-ceo.jpg"  /*"C:/Users/Utente/Desktop/BooleanProject/js-our-team/img/wayne-barnett-founder-ceo.jpg"*/
 };
 
 const angelaCarrol = {
@@ -19,8 +19,16 @@ const walterGordon = {
     img: "img/wayne-barnett-founder-console.jpg"
 };
 
+const angelaLopez = {
+    nome: "Angela",
+    ruolo: "social media manager",
+    img: "img/wayne-barnett-founder-console.jpg"
+};
 
-const team = [wayneBarnett,angelaCarrol,walterGordon];  //array di oggetti
+
+
+
+const team = [wayneBarnett,angelaCarrol,walterGordon,angelaLopez];  //array di oggetti
 
 console.log(team);
 
