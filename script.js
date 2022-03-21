@@ -51,9 +51,9 @@ for(let key in wayneBarnett)
 //Una volta definita la struttura dati, prendendo come riferimento la card di esempio presente nell'html, stampare dinamicamente una card per ogni membro del team.
 
 //const card = document.createElement('div');
-const teamCard = [];
-const cardImage = [];    //creo un array per salvarmi i riferimenti ai vari div che conterranno l'immagine,il nome ed la professione di ciascun membro del team
-const cardText = [];
+const teamCard = [];    //creao array per salvarmi i riferimenti ai div che conterranno ognuno ciascuna delle card
+const cardImage = [];   //creo array per salvarmi i riferimenti ai vari div che conterranno ciascuno l'immagine del membro del team 
+const cardText = [];    //creao array per salvarmi riferimenti ai vari div contenenti le informazioni di ciascun membro del team (nome e professione)
 const nome = [];    //array per salvarmi i riferimenti ai vari h3 dei nomi
 const ruolo = [];   //array per salvarmi i riferimenti ai vari p in cui ci sarà scritta la professione
 const img = [];     //array per salvarmi i riferimenti alle varie immagini 
@@ -61,7 +61,7 @@ const img = [];     //array per salvarmi i riferimenti alle varie immagini
 for(let i = 0; i < team.length;i++)
 {
     teamCard.push(document.createElement('div'));
-    cardImage.push(document.createElement('div'));   //inserisco i riferimenti  nell'array dei riferimenti ai vari div contenenti le informazioni dei membri dei team
+    cardImage.push(document.createElement('div'));   //inserisco i riferimenti  nell'array dei riferimenti ai vari div contenenti le immagini dei membri del team
     cardText.push(document.createElement('div'));
     nome.push(document.createElement('h3'));
     ruolo.push(document.createElement('p'));
@@ -111,7 +111,11 @@ card.appendChild(ruolo);
 */
 
 
+/*funzioni*/
+function creaRiferimenti(lunghezzaArrayTeam)
+{
 
+}
 
 
 
