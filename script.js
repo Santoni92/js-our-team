@@ -4,7 +4,7 @@ console.log('JS OK!');
 const wayneBarnett = {
     nome: "Wayne",
     ruolo: "founder",
-    img: "img/wayne-barnett-founder-ceo.jpg"  /*"C:/Users/Utente/Desktop/BooleanProject/js-our-team/img/wayne-barnett-founder-ceo.jpg"*/
+    img: "img/wayne-barnett-founder-ceo.jpg"  
 };
 
 const angelaCarrol = {
